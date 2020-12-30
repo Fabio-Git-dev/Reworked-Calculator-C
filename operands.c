@@ -12,18 +12,15 @@ void divis() {
      float n1, n2;
 
 
-    char exclude = '^,^';
-
-
 
 
 
          printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
 
-         if (n1 && n2 == exclude) {
+         if (n2 == 0) {
 
-            printf("wrong symbol, use the correct period symbol \n");
+            printf("You can't divide per 0.\n");
 
             return divis();
          }
