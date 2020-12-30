@@ -9,8 +9,8 @@ void divis() {
 
     float div;
 
-    float n1;
-    float n2;
+     float n1, n2;
+
 
     char exclude = '^,^';
 
@@ -42,10 +42,10 @@ void divis() {
 void sub() {
 
 
-    float sub;
 
-    float n1;
-    float n2;
+
+    float n1, n2, sub;
+
 
 
 

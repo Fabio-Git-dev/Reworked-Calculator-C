@@ -5,9 +5,9 @@
  //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
 
 
-    unsigned int choice; //Used to choose unit at the beginning
+     int choice; //Used to choose unit at the beginning
 
-    unsigned int decision;  //Used to chose option at the end of operation.
+     int decision;  //Used to chose option at the end of operation.
 
 
 
