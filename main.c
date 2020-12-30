@@ -5,14 +5,20 @@
  //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
 
 
-     int choice; //Used to choose unit at the beginning
+     unsigned int choice; //Used to choose unit at the beginning
 
-     int decision;  //Used to chose option at the end of operation.
+     unsigned int decision;  //Used to chose option at the end of operation.
 
 
 
-   /*NOTE, all the inputs that require a scanf that are depending from a do-while or a if-else ecc, MUST be declared in the same place
-    where the cicles are declared, or else the condition won't be read and it won't work*/
+
+
+   /*
+
+    NOTE, all the inputs that require a scanf that are depending from a do-while or a if-else ecc, MUST be declared in the same place
+    where the cicles are declared, or else the condition won't be read and it won't work
+
+   */
 
 
 
@@ -25,6 +31,8 @@ int main(void) //Main function
 
 
          printf("Calculator by Fabio-Git-Dev \n");
+
+
 
 
 

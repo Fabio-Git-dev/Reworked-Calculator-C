@@ -7,7 +7,7 @@
 void divis() {
 
 
-    float div;
+     float div;
 
      float n1, n2;
 
