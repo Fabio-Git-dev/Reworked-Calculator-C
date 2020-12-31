@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include "operands.h"
 
- //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
+ /*Copyright by Fabio-Git-Dev - Software Engineer student UniBa
+  -Date of Update: 12-31-2020
+  */
+
 
 
      unsigned int choice; //Used to choose unit at the beginning
