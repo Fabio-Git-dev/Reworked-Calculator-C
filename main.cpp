@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "operands.h"
+#include <math.h>
 
- /*Copyright by Fabio-Git-Dev - Software Engineer student UniBa
-  -Date of Update: 12-31-2020
-  */
-
+ //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
 
 
      unsigned int choice; //Used to choose unit at the beginning
@@ -42,7 +40,7 @@ int main(void) //Main function
    do{
 
 
-    printf("Wich operation you want to do? 1(+) 2(-) 3(x) 4(/) 5 and others(Exit) \n");
+    printf("Wich operation you want to do? 1(+) 2(-) 3(x) 4(/) 5 (Power) 6 Exit Progam \n");
 
     scanf("%d", &choice);
 
@@ -51,14 +49,8 @@ int main(void) //Main function
       for each number a condition is needed, that's why need to use else if to express a condition.*/
 
 
-    if (choice == 6) {
 
-        printf("Wrong selection, retry\n");
-
-        return main();
-    }
-
-       else if (choice == 7) {
+        if (choice == 7) {
 
         printf("Wrong selection, retry\n");
 
@@ -98,6 +90,13 @@ case 1:
 
            system("cls");
 
+           if (decision != 1) { //condition to return to the main menu if a person press 2 for No.
+
+            return main();
+
+
+          }
+
 
    } while (decision == 1);
      break;
@@ -116,6 +115,13 @@ case 1:
           scanf("%d", &decision);
 
            system("cls");
+
+           if (decision != 1) {
+
+            return main();
+
+
+          }
 
 
     } while (decision == 1);
@@ -137,6 +143,13 @@ case 1:
 
            system("cls");
 
+           if (decision != 1) {
+
+            return main();
+
+
+          }
+
 
     } while (decision == 1);
       break;
@@ -150,16 +163,46 @@ case 1:
           divis();
 
            printf("Do you want to continue with this format? 1(Yes) 2(No) \n");
-          scanf("%d", &decision);
+           scanf("%d", &decision);
 
            system("cls");
+
+           if (decision != 1) {
+
+            return main();
+
+
+          }
+
+
+
 
 
          } while (decision == 1);
            break;
 
 
+ case 5:
+    do {
 
+          power();
+
+          printf("Do you want to continue with this format? 1(Yes) 2(No) \n");
+          scanf("%d", &decision);
+
+          system("cls");
+
+          if (decision != 1) {
+
+            return main();
+
+
+          }
+
+
+
+    } while (decision == 1);
+      break;
 
 
 

@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdlib.h>
 #include "operands.h"
+#include <math.h>
+
 
 //DON'T PUT CONDITION VALUES THAT HAS TO BE READ IN THE MAIN HERE! OR ELSE THE VALUE FOR THE OCNDITION WILL FAIL TO BE VERIFIED.
 
@@ -121,7 +123,38 @@ void mult() {
 
 
 
+void power() {
 
+
+     int pow1, pow2;
+
+     int elevation, elevation2;
+
+
+
+
+
+
+
+
+
+        printf("Insert two numbers \n");
+        scanf("%d %d", &pow1, &pow2);
+
+
+
+         elevation = pow1 * pow1;
+
+         elevation2 = pow2 * pow2;
+
+
+         printf("%d %d \n", elevation, elevation2);
+
+
+
+
+
+}
 
 
 
