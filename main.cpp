@@ -5,11 +5,7 @@
 
 
 
- /*
-   Copyright by Fabio-Git-Dev - Software Engineer student UniBa
-   Version 1.0 - Updated on 1 January 2021
- */
- 
+ //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
 
 
      unsigned int choice; //Used to choose unit at the beginning
@@ -36,9 +32,9 @@ int main(void) //Main function
          system("COLOR 4"); //sets color for each string.
 
          printf("\t\t\t\t\t **********************************\n");
-         printf("\t\t\t\t\t*     CALCULATOR BY Fabio-Git-Dev  *\n");
-         printf("\t\t\t\t\t*                V0.3b             *\n");
-         printf("\t\t\t\t\t **********************************\n");
+         printf("\t\t\t\t\t*     CALCULATOR BY Fabio-Git-Dev *\n");
+         printf("\t\t\t\t\t*                V1.0             *\n");
+         printf("\t\t\t\t\t ********************************* \n");
          printf("\t\t\t\t\tPress any Key to go to the menu....\n");
 
          gets(&press);
