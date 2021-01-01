@@ -15,14 +15,14 @@ void divis() {
 
      float n1, n2;
 
-
+         system("COLOR 7");
 
          system("cls");
 
          printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
 
-         system("COLOR 7");
+
 
          if (n2 == 0) {
 
@@ -30,7 +30,7 @@ void divis() {
 
                 system("COLOR 4");
 
-            printf("You can't divide per 0.\n");
+            printf("You can't divide by 0.\n");
 
             system("pause");
 
