@@ -54,7 +54,7 @@ int main(void) //Main function
 
 
 
-    printf("\t\t\t***Wich operation you want to do?*** \n");
+    printf("\t\t\t***Select the operation*** \n");
 
 
     printf("1(+)\n2(-)\n3(x)\n4(/)\n5(Power)\n6(Exit)\n \n");
