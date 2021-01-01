@@ -10,7 +10,6 @@
 
 void divis() {
 
-     system("COLOR 7");
 
      float div;
 
@@ -18,10 +17,12 @@ void divis() {
 
 
 
-
+         system("cls");
 
          printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
+
+         system("COLOR 7");
 
          if (n2 == 0) {
 
@@ -59,7 +60,7 @@ void sub() {
 
 
 
-
+        system("cls");
 
         printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
@@ -86,7 +87,7 @@ void sum() {
 
 
 
-
+         system("cls");
 
          printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
@@ -114,7 +115,7 @@ void mult() {
 
 
 
-
+        system("cls");
 
         printf("Insert two numbers \n");
          scanf("%f %f", &n1, &n2);
@@ -146,7 +147,7 @@ void power() {
 
 
 
-
+       system("cls");
 
 
         printf("Insert two numbers \n");
