@@ -41,7 +41,7 @@ int main(void) //Main function
    do{
 
 
-    printf("Wich operation you want to do? 1(+) 2(-) 3(x) 4(/) 5 (Power) 6 Exit Progam \n");
+    printf("Wich operation you want to do? 1(+) 2(-) 3(x) 4(/) 5 (Power) 6 (Exit) \n");
 
     scanf("%d", &choice);
 
@@ -49,13 +49,12 @@ int main(void) //Main function
     /*Conditions in case the number doesn't correspond to the number given in the selection
       for each number a condition is needed, that's why need to use else if to express a condition.*/
 
-
-
         if (choice == 7) {
 
         system("cls");
 
         system("COLOR 4");
+
         printf("Wrong selection, retry\n");
 
         system("Pause");
@@ -64,8 +63,10 @@ int main(void) //Main function
 
         return main();
 
+        }
 
-       } else if (choice == 8) {
+
+         else if (choice == 8) {
 
         system("cls");
 
@@ -105,7 +106,7 @@ switch (choice) { //switch case for operand choice.
 
 case 1:
 
-     do{
+     do {
 
          sum();
 
