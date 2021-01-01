@@ -46,10 +46,10 @@ int main(void) //Main function
     scanf("%d", &choice);
 
 
-    /*Conditions in case the number doesn't correspond to the number given in the selection
+    /*Condition in case the number is higher to the number given in the selection
       for each number a condition is needed, that's why need to use else if to express a condition.*/
 
-        if (choice == 7) {
+        if (choice > 6) {
 
         system("cls");
 
@@ -64,38 +64,6 @@ int main(void) //Main function
         return main();
 
         }
-
-
-         else if (choice == 8) {
-
-        system("cls");
-
-        system("COLOR 4");
-
-        printf("Wrong selection, retry\n");
-
-        system("Pause");
-
-        system("cls");
-
-        return main();
-
-
-       }  else if (choice == 9) {
-
-        system("cls");
-
-        system("COLOR 4");
-
-        printf("Wrong selection, retry\n");
-
-        system("Pause");
-
-        system("cls");
-
-        return main();
-
-       }
 
 
 
