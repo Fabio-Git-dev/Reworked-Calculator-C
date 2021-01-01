@@ -49,7 +49,7 @@ int main(void) //Main function
     /*Condition in case the number is higher to the number given in the selection
       for each number a condition is needed, that's why need to use else if to express a condition.*/
 
-        if (choice > 6) {
+        if (choice > 6 || choice == 0) {  //if the choice is major or equal to 0
 
         system("cls");
 
