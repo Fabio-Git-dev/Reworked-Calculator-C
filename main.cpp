@@ -5,6 +5,9 @@
 
 
 
+
+
+
  //Copyright by Fabio-Git-Dev - Software Engineer student UniBa
 
 
@@ -29,9 +32,9 @@ int main(void) //Main function
 
 {
 
-         system("COLOR 4"); //sets color for each string.
 
-         printf("\t\t\t\t\t **********************************\n");
+
+         printf("\033[0;31m\t\t\t\t\t **********************************\n");
          printf("\t\t\t\t\t*     CALCULATOR BY Fabio-Git-Dev *\n");
          printf("\t\t\t\t\t*                V1.0             *\n");
          printf("\t\t\t\t\t ********************************* \n");
@@ -41,7 +44,6 @@ int main(void) //Main function
 
          system("cls");
 
-         system("COLOR 7");
 
 
 
@@ -54,10 +56,10 @@ int main(void) //Main function
 
 
 
-    printf("\t\t\t***Select an operation*** \n");
+    printf("\033[0;37m\t\t\t***Select an operation*** \n");
 
 
-    printf("1(+)\n\n2(-)\n\n3(x)\n\n4(/)\n\n5(Power)\n\n6(Exit)\n\n \n");
+    printf("\033[0;31m1(+)  \n\n\033[0;36m2(-)  \n\n\033[0;33m3(x)  \n\n\033[0;32m4(/)  \n\n\033[0;34m5(Power)  \n\n\033[0;35m6(Compare 4 numbers)  \n\n\033[0;37m7(Exit) \n");
 
     scanf("%d", &choice);
 
@@ -65,16 +67,16 @@ int main(void) //Main function
     /*Condition in case the number is higher to the number given in the selection
       for each number a condition is needed, that's why need to use else if to express a condition.*/
 
-        if (choice > 6 || choice == 0)
+        if (choice > 7 || choice == 0)
 
 
             {  //if the choice is major or equal to 0
 
         system("cls");
 
-        system("COLOR 4");
 
-        printf("Wrong selection, retry\n");
+
+        printf("\033[0;31mWrong selection, retry\n");
 
         system("Pause");
 
@@ -223,13 +225,145 @@ case 1:
 
 
 
+ case 6:
+    do {
+
+            system("cls");
+
+
+
+            int a, b, c, d;
+
+
+            printf("Insert 4 numbers\n");
+            scanf("%d %d %d %d", &a, &b, &c, &d);
+
+            if (a > b && c > d) {
+
+            system("cls");
+
+
+            printf("\033[0;31m%d is major than %d\n%d is minor than %d\n", a, b, c, d);
+
+
+             printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+
+      }
+
+        else if (a == b && c == d) {
+
+            system("cls");
+
+
+            printf("\033[0;33m%d is equal to %d\n%d is equal to %d\n", a, b, c, d);
+
+             printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+
+        }
+
+            else if (a < b && c < d) {
+
+            system("cls");
+
+
+             printf("\033[0;32m%d is minor than %d\n%d is minor than %d\n", a, b, c, d);
+
+             printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+
+
+            } else if (a < b && c > d) {
+
+            system("cls");
+
+
+            printf("\033[0;35m%d is minor than %d\n%d is major than %d\n", a, b, c, d);
+
+             printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+
+            } else if (a > b && c == d) {
+
+                system("cls");
+
+
+            printf("%\033[1;35m%d is major than %d\n%d is equal to %d\n", a, b, c, d);
+
+             printf("Do you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+
+
+
+    }         else if (a > b && c < d) {
+
+            system("cls");
+
+
+            printf("%\033[1;34md is major than %d\n%d is minor than %d\n", a, b, c, d);
+
+             printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+             scanf("%d", &decision);
+
+
+    }       else if (a == b && c < d) {
+
+                system("cls");
+
+
+            printf("\033[1;36m%d is equal to %d\n%d is minor than %d\n", a, b, c, d);
+
+            printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+            scanf("%d", &decision);
+
+
+
+
+    }      else if (a == b && c > d) {
+
+                system("cls");
+                system("COLOR 8");
+
+            printf("\033[1;37m%d is equal to %d\n%d is major than %d\n", a, b, c, d);
+
+            printf("\033[0;37mDo you want to continue with this format? 1(Yes) 2(No) \n");
+            scanf("%d", &decision);
+
+    }
+
+
+
+          system("cls");
+
+          if (decision != 1) {
+
+            return main();
+
+
+          }
+
+
+
+    } while (decision == 1);
+      break;
+
 
 default:
 
             system("cls");
 
-            system("COLOR D");
-            printf("Exiting program... \n");
+            printf("White \033[0;37mExiting program... \n");
             system("pause"); //Value used to exit program.
 
             return 0;

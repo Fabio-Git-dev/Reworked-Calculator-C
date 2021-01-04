@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "operands.h"
 #include <math.h>
+#define MAX 10
+
 
 
 
@@ -13,15 +15,24 @@ void divis() {
 
      float div;
 
-     float n1, n2;
+     float n1;
+
+
+     float n2;
+
+
+
+
+
+
+
 
          system("COLOR 7");
 
          system("cls");
 
-         printf("Insert two numbers \n");
+         printf("Insert the numbers\n");
          scanf("%f %f", &n1, &n2);
-
 
 
          if (n2 == 0) {
@@ -167,8 +178,6 @@ void power() {
 
 
 }
-
-
 
 
 

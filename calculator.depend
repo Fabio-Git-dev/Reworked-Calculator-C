@@ -4,7 +4,7 @@
 	<stdlib.h>
 	<math.h>
 
-1609508117 source:e:\strumenti programmazione\progetti in c\calculator in c\main.c
+1609790524 source:e:\strumenti programmazione\progetti in c\calculator in c\main.c
 	<stdio.h>
 	<stdlib.h>
 	"operands.h"
@@ -40,7 +40,7 @@
 
 1609424248 e:\strumenti programmazione\progetti in c\calculator in c\operands.h
 
-1609508310 source:e:\strumenti programmazione\progetti in c\calculator in c\operands.c
+1609694504 source:e:\strumenti programmazione\progetti in c\calculator in c\operands.c
 	<stdlib.h>
 	<stdlib.h>
 	"operands.h"
@@ -53,4 +53,18 @@
 	<stdlib.h>
 	"operands.h"
 	<math.h>
+
+1609541190 source:e:\strumenti programmazione\progetti in c\calculator in c\graphics.c
+	"graphics.h"
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
+1609541118 e:\strumenti programmazione\progetti in c\calculator in c\graphics.h
+
+1609787585 source:e:\strumenti programmazione\progetti in c\calculator in c\compare.c
+	<stdio.h>
+	<stdlib.h>
+
+1609785909 e:\strumenti programmazione\progetti in c\calculator in c\compare.h
 
