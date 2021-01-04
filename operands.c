@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "operands.h"
 #include <math.h>
-#define MAX 10
+
 
 
 
