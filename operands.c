@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "operands.h"
 #include <math.h>
-
+#define MAX 10
 
 
 
@@ -180,4 +180,108 @@ void power() {
 }
 
 
+void compare() {
 
+
+            int a, b, c, d;
+
+
+
+
+            printf("Insert 4 numbers\n");
+            scanf("%d %d %d %d", &a, &b, &c, &d);
+
+            if (a > b && c > d) {
+
+            system("cls");
+
+
+            printf("\033[0;31m%d is major than %d\n%d is minor than %d\n", a, b, c, d);
+
+
+
+
+
+      }
+
+        else if (a == b && c == d) {
+
+            system("cls");
+
+
+            printf("\033[0;33m%d is equal to %d\n%d is equal to %d\n", a, b, c, d);
+
+
+
+
+        }
+
+            else if (a < b && c < d) {
+
+            system("cls");
+
+
+             printf("\033[0;32m%d is minor than %d\n%d is minor than %d\n", a, b, c, d);
+
+
+
+
+
+            } else if (a < b && c > d) {
+
+            system("cls");
+
+
+            printf("\033[0;35m%d is minor than %d\n%d is major than %d\n", a, b, c, d);
+
+
+
+
+            } else if (a > b && c == d) {
+
+                system("cls");
+
+
+            printf("%\033[1;35m%d is major than %d\n%d is equal to %d\n", a, b, c, d);
+
+
+
+
+
+
+
+    }         else if (a > b && c < d) {
+
+            system("cls");
+
+
+            printf("%\033[1;34md is major than %d\n%d is minor than %d\n", a, b, c, d);
+
+
+
+
+    }       else if (a == b && c < d) {
+
+                system("cls");
+
+
+            printf("\033[1;36m%d is equal to %d\n%d is minor than %d\n", a, b, c, d);
+
+
+
+
+
+
+    }      else if (a == b && c > d) {
+
+                system("cls");
+                system("COLOR 8");
+
+            printf("\033[1;37m%d is equal to %d\n%d is major than %d\n", a, b, c, d);
+
+
+}
+
+
+
+}
