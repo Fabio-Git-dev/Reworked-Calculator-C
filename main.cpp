@@ -260,7 +260,7 @@ default:
 
             system("cls");
 
-            printf("White \033[0;37mExiting program... \n");
+            printf("\033[0;37mExiting program... \n");
             system("pause"); //Value used to exit program.
 
             return 0;
