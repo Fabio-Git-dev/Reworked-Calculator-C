@@ -13,42 +13,36 @@
 void divis() {
 
 
-     float div;
-
-     float n1;
-
-
-     float n2;
-
-
-
-
-
-
+         float div, n1, n2;
 
 
          system("COLOR 7");
 
-         system("cls");
+               system("cls");
 
-         printf("Insert the numbers\n");
-         scanf("%f %f", &n1, &n2);
+                 printf("Insert the numbers\n");
+                  scanf("%f %f", &n1, &n2);
 
 
-         if (n2 == 0) {
 
-                system("cls");
 
-                system("COLOR 4");
+    if (n2 == 0) { //exception for the divider if you want to divide by 0.
+
+        system("cls");
+
+          system("COLOR 4");
 
             printf("You can't divide by 0.\n");
 
-            system("pause");
+               system("pause");
 
-            system("cls");
+                 system("cls");
 
-            return divis();
-         }
+                     return divis();
+
+
+
+         } else {  //if the divider is different than 0, it will do the division.
 
 
          div = n1 / n2;
@@ -56,9 +50,15 @@ void divis() {
 
          printf("%.2f \n", div);
 
-
+      }
 
 }
+
+
+
+
+
+
 
 
 void sub() {
@@ -88,13 +88,18 @@ void sub() {
 
 }
 
+
+
+
+
+
+
 void sum() {
 
 
-    float sum;
+    float sum, n1, n2;
 
-    float n1;
-    float n2;
+
 
 
 
@@ -114,6 +119,10 @@ void sum() {
 
 
 }
+
+
+
+
 
 
 void mult() {
@@ -149,9 +158,9 @@ void mult() {
 void power() {
 
 
-     int pow1, pow2;
+     int pow1, pow2, elevation, elevation2;
 
-     int elevation, elevation2;
+
 
 
 
@@ -166,9 +175,9 @@ void power() {
 
 
 
-         elevation = pow1 * pow1;
+         elevation = pow1 * pow1; //power on the first number
 
-         elevation2 = pow2 * pow2;
+         elevation2 = pow2 * pow2; //power on the second number.
 
 
          printf("%d %d \n", elevation, elevation2);
@@ -180,7 +189,7 @@ void power() {
 }
 
 
-void compare() {
+void compare() { //little comparison system between numbers.
 
 
             int a, b, c, d;
@@ -190,6 +199,9 @@ void compare() {
 
             printf("Insert 4 numbers\n");
             scanf("%d %d %d %d", &a, &b, &c, &d);
+
+            //Resuming all the possible conditions between 4 numbers. each condition has his color scheme.
+
 
             if (a > b && c > d) {
 
